@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface DestinationViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *ghostPepper;
+@property (weak, nonatomic) IBOutlet UIButton *noSauce;
+@property (weak, nonatomic) IBOutlet UIButton *eHarmony;
+@property (weak, nonatomic) IBOutlet UIButton *pizza;
 
+@property (weak, nonatomic) IBOutlet UIButton *backToBeginning;
 @end

@@ -21,6 +21,8 @@
 		2667E6BA18CF91FD0068E35F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2667E69C18CF91FC0068E35F /* UIKit.framework */; };
 		2667E6C218CF91FD0068E35F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2667E6C018CF91FD0068E35F /* InfoPlist.strings */; };
 		2667E6C418CF91FD0068E35F /* AdventureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2667E6C318CF91FD0068E35F /* AdventureTests.m */; };
+		2667E6CE18CF922A0068E35F /* CheckMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2667E6CD18CF922A0068E35F /* CheckMate.framework */; };
+		26B0330B18CFD37F00E7F5D8 /* DestinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B0330A18CFD37F00E7F5D8 /* DestinationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		2667E6BF18CF91FD0068E35F /* AdventureTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AdventureTests-Info.plist"; sourceTree = "<group>"; };
 		2667E6C118CF91FD0068E35F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2667E6C318CF91FD0068E35F /* AdventureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdventureTests.m; sourceTree = "<group>"; };
+		2667E6CD18CF922A0068E35F /* CheckMate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CheckMate.framework; path = ../../../Downloads/CheckMate.framework; sourceTree = "<group>"; };
+		26B0330918CFD37F00E7F5D8 /* DestinationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DestinationViewController.h; path = ../DestinationViewController.h; sourceTree = "<group>"; };
+		26B0330A18CFD37F00E7F5D8 /* DestinationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DestinationViewController.m; path = ../DestinationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2667E6CE18CF922A0068E35F /* CheckMate.framework in Frameworks */,
 				2667E69B18CF91FC0068E35F /* CoreGraphics.framework in Frameworks */,
 				2667E69D18CF91FC0068E35F /* UIKit.framework in Frameworks */,
 				2667E69918CF91FC0068E35F /* Foundation.framework in Frameworks */,
@@ -101,6 +107,7 @@
 		2667E69718CF91FC0068E35F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2667E6CD18CF922A0068E35F /* CheckMate.framework */,
 				2667E69818CF91FC0068E35F /* Foundation.framework */,
 				2667E69A18CF91FC0068E35F /* CoreGraphics.framework */,
 				2667E69C18CF91FC0068E35F /* UIKit.framework */,
@@ -115,6 +122,8 @@
 				2667E6A718CF91FC0068E35F /* AppDelegate.h */,
 				2667E6A818CF91FC0068E35F /* AppDelegate.m */,
 				2667E6AA18CF91FC0068E35F /* Main.storyboard */,
+				26B0330918CFD37F00E7F5D8 /* DestinationViewController.h */,
+				26B0330A18CFD37F00E7F5D8 /* DestinationViewController.m */,
 				2667E6AD18CF91FC0068E35F /* ViewController.h */,
 				2667E6AE18CF91FC0068E35F /* ViewController.m */,
 				2667E6B018CF91FC0068E35F /* Images.xcassets */,
@@ -252,6 +261,7 @@
 				2667E6AF18CF91FC0068E35F /* ViewController.m in Sources */,
 				2667E6A918CF91FC0068E35F /* AppDelegate.m in Sources */,
 				2667E6A518CF91FC0068E35F /* main.m in Sources */,
+				26B0330B18CFD37F00E7F5D8 /* DestinationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +386,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/manaspradhan/Downloads,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Adventure/Adventure-Prefix.pch";
 				INFOPLIST_FILE = "Adventure/Adventure-Info.plist";
@@ -389,6 +403,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/manaspradhan/Downloads,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Adventure/Adventure-Prefix.pch";
 				INFOPLIST_FILE = "Adventure/Adventure-Info.plist";
@@ -456,6 +474,7 @@
 				2667E6C918CF91FD0068E35F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2667E6CA18CF91FD0068E35F /* Build configuration list for PBXNativeTarget "AdventureTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +483,7 @@
 				2667E6CC18CF91FD0068E35F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

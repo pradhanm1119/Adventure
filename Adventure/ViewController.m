@@ -7,23 +7,28 @@
 //
 
 #import "ViewController.h"
+#import "DestinationViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *clearUpBoxes;
+@property (weak, nonatomic) IBOutlet UIButton *eatBoxes;
+
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(UIButton*)sender
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    DestinationViewController *vc = segue.destinationViewController;
+    
+    if (sender == self.clearUpBoxes)
+    {
+        vc.title = self.clearUpBoxes.currentTitle;
+    }
+    if (sender == self.eatBoxes)
+    {
+        vc.title = self.eatBoxes.currentTitle;
+    }    
 }
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 @end
